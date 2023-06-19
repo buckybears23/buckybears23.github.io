@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <!-- favicon -->
+  <link data-react-helmet="true" rel="icon" type="image/png" href="hc.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="styles.css">
+  <title>Hyunsang Cho</title>
+  
+</head>
+
+<body class="light" id="top">
+  <header class="header center">
+    
+    <h3 style="background: transparent;">
+      <a href="index.html" style="color: var(--clr-primary)">HC</a>
+    </h3>
+    
+    <nav class="nav center">
+      <ul class="nav__list center">
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#projects">Projects</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#professional_experience">Professional Experience</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#clubs_and_activities">Clubs and Activities</a>
+        </li>
+        
+
+
+
+<!-- add paatu -->
+
+
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#skills">Skills</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      
+
+      <button type="button" aria-label="toggle theme" class="btn btn--icon">
+        <i id="btn-theme" class="fas fa-moon"></i>
+      </button>
+
+      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      
+    </nav>
+  </header>
+
+  <main>
+    
+    <div class="top_intro">
+    
+      <div class="about class">
+        
+        <h1 style="text-align: center;">Hi, I'm <span class="about__name">Hyunsang(or Harry) Cho</span></h1>
+        <h2 id="berkeley" class="about__role">CS + DS @ UC Berkeley</h2>
+        <p class="about__desc">I'm a rising junior interested in AI/ML. I'm passionate about studying theories of AI/ML and applying ML models to make people's lives easier/better!</p>
+        
+        <div class="about__contact center">
+          <a href="https://docs.google.com/document/d/1t_oS1Z1prlxIk3AqeVMQjRaevmhFY3Gh/edit?usp=sharing&ouid=111030771499611706573&rtpof=true&sd=true" target="_blank">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a href="https://github.com/hyunsang4072" target="_blank" aria-label="github" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/hyunsang-harry-cho-b27b24249/" target="_blank" aria-label="linkedin" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+    <!-- image glitch -->
+    <div>
+        <div class="c-glitch" style="background-image: url('llamame.jpeg');">
+          <div class="c-glitch__img" style="background-image: url('llamame.jpeg');"></div>
+          <div class="c-glitch__img" style="background-image: url('llamame.jpeg');"></div>
+          <div class="c-glitch__img" style="background-image: url('llamame.jpeg');"></div>
+          <div class="c-glitch__img" style="background-image: url('llamame.jpeg');"></div>
+          <div class="c-glitch__img" style="background-image: url('llamame.jpeg');"></div>
+          <div class="c-glitch__img" style="background-image: url('llamame.jpeg');"></div>
+        </div>
+    </div>
+      <!-- <div class="img">
+        <img src="llamame.jpeg" alt="llama" width="400px" height="400px" style="border-radius: 50%;">
+      </div> -->
+
+
+    </div>
+
+    <section id="projects" class="section projects">
+      <h2 class="section__title">Projects</h2>
+      <div class="projects__grid">
+        
+        <div class="project">
+          <h3>Scheme Interpreter</h3>
+          <p class="project__description">
+            Created an interpreter for a subset of the Scheme programming language
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">Scheme</li>
+          </ul>
+          <a href="https://cs61a.org/proj/scheme/" target="_blank" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>NGordNet(NGrams & Wordnet)</h3>
+          <p class="project__description">
+            Implemented backend API that mimics Google’s NGram Viewer. Used graph searching algorithms such as BFS to process the data.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Java</li>
+          </ul>
+
+          <a href="https://sp23.datastructur.es/materials/proj/proj2b/" target="_blank" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <!--
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+
+      </div>
+
+
+    <section id="professional_experience" class="section experience">
+      <h2 class="section__title">Professional Experience</h2>
+      <div class="projects__grid">
+        
+        <div class="project">
+          <h3>HashedTokens</h3>
+          <h6 style="padding-top: 10px;">ML Research Intern</h6>
+          <p class="project__description">
+            In Progress...
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">ML</li>
+            <li class="project__stack-item">Python</li>
+          </ul>
+        </div>
+    </section>
+
+
+    <!-- <section id="clubs_and_activities" class="section experience">
+      <h2 class="section__title">Clubs and Activities</h2>
+      <div class="projects__grid">
+        
+        <div class="project">
+          <h3>UpSync Consulting</h3>
+          <h6 style="padding-top: 10px;">Technical Consultant</h6>
+          <p class="project__description">
+            Develop technological and business solutions for startups, learn critical professional development, networking, and interview strategies.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">C</li>
+            <li class="project__stack-item">React.js</li>
+          </ul>
+
+          <a href="https://www.upsyncberkeley.com/" target="_blank" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </section> -->
+
+
+    <section class="section skills" id="skills">
+      
+      <h2 class="section__title">Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__list-item btn btn--plain">Data Structures (Java, Python)</li>
+        <li class="skills__list-item btn btn--plain">Algorithms (Java, Python)</li>
+        <li class="skills__list-item btn btn--plain">Software Engineering</li>
+        <li class="skills__list-item btn btn--plain">Machine Learning (Python)</li>
+        <li class="skills__list-item btn btn--plain">SQL</li>
+        <!-- <li class="skills__list-item btn btn--plain">Data Analytics (R)</li> -->
+        <li class="skills__list-item btn btn--plain">Web Design (JavaScript, HTML, CSS)</li>
+      </ul>
+      
+    </section>
+    <section class="section contact center" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <a href="mailto:hyunsang237@berkeley.edu">
+        <span class="btn btn--outline" style="margin-left: calc((100% - 113.5px) / 2); margin-right: calc((100% - 113.5px) / 2);">
+          Email me
+        </span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    
+    <a href="/" class="link footer__link">
+        Made with 🖤 by Hyunsang Cho
+    </a>
+    
+  </footer>
+
+
+  <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
